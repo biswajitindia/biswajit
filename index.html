@@ -49,7 +49,11 @@
     
           </div>
         </div>
-        <div class="hero"></div>
+        <div class="featured-image">
+          <div class="image">
+              <img src="./WhatsApp Image 2025-02-08 at 12.41.48_3af9b3e4.jpg" alt="avatar">
+          </div>
+        </div>
     
       </section>
       <section class="skill-section" id="skill">
@@ -236,9 +240,9 @@
         <span class="contactdesc">
           Please fill out the form below to discuss any work opportunities.
         </span>
-        <form action="" class="contactform" id="contactForm">
-          <input type="text" class="name" placeholder="Enter your name" name="from_name" required />
-          <input type="email" class="email" placeholder="Enter your email" name="from_email" required />
+        <form action="" class="contactform" id="contactForm" onsubmit="emailsend(); reset(); return false">
+          <input type="text" class="name" placeholder="Enter your name" name="name" required />
+          <input type="email" class="email" placeholder="Enter your email" name="email" required />
           <textarea name="message" rows="5" placeholder="Enter your message" class="msg" required></textarea>
           <button type="submit" class="submitbtn">Submit</button>
           <!-- <div class="links">
@@ -253,7 +257,10 @@
     
       
     
-      
+     <!-- <script src="https://smtpjs.com/v3/smtp.js">
+    </script>    -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+
     <script src="./scripit.js"></script>
 </body>
 </html>
